@@ -5,7 +5,7 @@ pipeline {
       stage('checkout') {
            steps {
              
-                git branch: 'main', url: 'git@github.com:sbmagar/jenkins-docker-flask.git'
+                git branch: 'main', url: 'https://github.com/sbmagar/jenkins-docker-flask.git'
              
           }
         }
@@ -53,4 +53,3 @@ stage('Docker Build and Tag') {
         }
     }
  }
- 
